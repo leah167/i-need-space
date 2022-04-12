@@ -1,12 +1,12 @@
 * {
     font-family: 'Roboto', sans-serif;
-    color: #03045e;
+    color: #b3b3db;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #caf0f8;
+    background-color: #5d16e0;
 }
 
 h1, h2 {
@@ -25,7 +25,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #00b4d8;
+    background-image: url("https://images.pexels.com/photos/4644812/pexels-photo-4644812.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     padding: 0 24px;
 }
 
@@ -33,7 +33,7 @@ h2 {
     border-radius: 3px;
     width: fit-content;
     margin-bottom: 24px;
-    background-color: #90e0ef;
+    background-color: #321c6e;
 }
 
 .row {
@@ -64,6 +64,14 @@ input {
     border-radius: 3px;;
 }
 
+input, select, textarea{
+    color:blueviolet;
+}
+
+input::placeholder{
+    color: navy;
+}
+
 button {
     background-color: #03045e;
     color: white;
@@ -78,4 +86,14 @@ button {
 
 button:hover {
     box-shadow: 0 0 20px #caf0f8;
+}
+
+@media screen and (max-width:700px) {
+    * {
+        font-size:small;
+    }
+
+    h1, h2{
+        font-size:large;
+    }
 }
